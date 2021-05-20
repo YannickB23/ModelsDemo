@@ -1,0 +1,21 @@
+﻿@model AuthorBook
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{ }
+<h1>This is Book index view</h1>
+<!--this is using ViewBag-->                    @*Loosley typed Views*@
+@*<h1>Id: @ViewBag.Book.Id</h1>
+    <h1>Title: @ViewBag.Book.Title</h1>
+    <h1>Year: @ViewBag.Book.YearPublished</h1>
+    <h1>Author: @ViewBag.Book.Author</h1>
+    <h1>Pages: @ViewBag.Book.Pages</h1>*@
+
+
+
+
+<h1>Id: @Model.Book.Id</h1>                 @*Strongly typed Views*@
+<h1>Title: @Model.Book.Title</h1>
+<h1>Year: @Model.Author.FirstName</h1>
+<h1>Author: @Model.Author.LastName</h1>
+<h1>Pages: @Model.Book.Pages</h1>
